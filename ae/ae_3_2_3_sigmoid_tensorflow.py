@@ -25,7 +25,22 @@ model.compile(
 # -----------------------------
 # Entrenamiento
 # -----------------------------
+
+print('before : ')
+
+for i, layer in enumerate(model.layers):
+    weights, biases = layer.get_weights()
+    print(f"Layer {i}: Weights shape {weights.shape},  {weights}")   
+    print(f"Layer {i}: Weights shape {biases.shape}, Biases shape {biases}")   
+
 model.fit(x, x, epochs=200, verbose=1)
+
+print('after : ')
+
+for i, layer in enumerate(model.layers):
+    weights, biases = layer.get_weights()
+    print(f"Layer {i}: Weights shape {weights.shape},  {weights}")   
+    print(f"Layer {i}: Weights shape {biases.shape}, Biases shape {biases}")   
 
 # -----------------------------
 # Reconstrucción
