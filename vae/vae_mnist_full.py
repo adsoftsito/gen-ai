@@ -198,6 +198,6 @@ def generate_digit(digit):
     plt.savefig(f"digit_{digit}.png")
     plt.close()
 
-generate_digit(3)
+generate_digit(8)
 #generate_digit(7)
 #generate_digit(0)

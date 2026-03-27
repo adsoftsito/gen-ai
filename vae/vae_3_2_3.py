@@ -6,7 +6,7 @@ np.random.seed(0)
 # Datos
 # =========================
 
-x = np.array([1.0,0.0,1.0])
+x = np.array([0.0,1.0,0.0])
 
 # =========================
 # Inicialización de pesos
