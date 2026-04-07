@@ -13,9 +13,11 @@ np.random.seed(42)
 
 # Generador
 Wg = np.random.randn(2, 2)
+print(Wg)
 
 # Discriminador
 Wd = np.random.randn(2, 1)
+print(Wd)
 
 lr = 0.01
 
@@ -30,11 +32,14 @@ for epoch in range(1000):
     
     # Datos reales
     x_real = real_data[np.random.randint(0, len(real_data))]
+    print("x_real", x_real)
     d_real = sigmoid(x_real @ Wd)
 
     # Datos falsos
     z = np.random.randn(2)
     x_fake = sigmoid(z @ Wg)
+    print("x_fake", x_fake)
+
     d_fake = sigmoid(x_fake @ Wd)
 
     # Loss gradiente
@@ -60,3 +65,5 @@ for epoch in range(1000):
 
     if epoch % 100 == 0:
         print(f"Epoch {epoch} | D(real): {d_real} | D(fake): {d_fake}")
+        # d_fake es el veredicto (escalar), x_fake es el dato (array)
+        print(f"Coordenadas Generadas: {x_fake}")
