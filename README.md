@@ -5,3 +5,4 @@
 2. [AutoEncoders](https://docs.google.com/presentation/d/1NXnr4d4OAKTK7s5TiV0HO9yksxiQGcU5v7dhgzfJ8jY/edit?usp=sharing)
 3. [Variational AutoEncoders](https://docs.google.com/presentation/d/1wH3XW0-8VmjpaOGPE2-i7r2xrsf4V8R7OWYOlfT-tqk/edit?usp=sharing)
 4. [GAN](https://docs.google.com/presentation/d/1OuK73YxNauY97ehQLk7kT0Q8UZveYRBQYrbm_ra8t4I/edit?usp=sharing)
+5. [Transformers](https://docs.google.com/presentation/d/1ER8OH2y2h32DcghXFretkWz3cssEmMZ1JPn4WVIwAdc/edit?usp=sharing)
